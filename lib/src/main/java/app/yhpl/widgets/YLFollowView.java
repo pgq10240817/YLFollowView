@@ -4,8 +4,6 @@ import android.animation.Animator;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Path;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -32,15 +30,15 @@ public class YLFollowView extends FrameLayout implements IYLRevealAnimator {
     private IYLFollowViewStateDelegate mDelegate;
 
 
-    public YLFollowView(@NonNull Context context) {
+    public YLFollowView(Context context) {
         this(context, null);
     }
 
-    public YLFollowView(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public YLFollowView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public YLFollowView(@NonNull Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public YLFollowView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mDelegate = new DefaultYLFollowViewDelegate(context, attrs, defStyleAttr);
         mRevealPath = new Path();

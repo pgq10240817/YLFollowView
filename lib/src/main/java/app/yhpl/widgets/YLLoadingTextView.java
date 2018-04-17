@@ -5,7 +5,6 @@ import android.content.res.ColorStateList;
 import android.content.res.Resources;
 import android.graphics.Canvas;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
 import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 import android.view.View;
@@ -22,11 +21,11 @@ public class YLLoadingTextView extends AppCompatTextView {
         this(context, null);
     }
 
-    public YLLoadingTextView(Context context, @Nullable AttributeSet attrs) {
+    public YLLoadingTextView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public YLLoadingTextView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public YLLoadingTextView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initDrawable();
     }

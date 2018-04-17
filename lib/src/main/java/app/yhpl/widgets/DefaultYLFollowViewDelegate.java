@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 
@@ -24,7 +23,7 @@ public class DefaultYLFollowViewDelegate implements IYLFollowViewStateDelegate {
 
     }
 
-    public DefaultYLFollowViewDelegate(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public DefaultYLFollowViewDelegate(Context context, AttributeSet attrs, int defStyleAttr) {
         int defaultFollowColor = getAttrData(context, R.attr.colorPrimary);
         int defaultFollowedColor = getAttrData(context, R.attr.colorPrimaryDark);
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.YLFollowView, defStyleAttr, 0);
