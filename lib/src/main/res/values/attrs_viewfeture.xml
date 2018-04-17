@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="YLFollowView">
+        <attr name="ylFolloweViewFollowTextColor" format="color|integer" />
+        <attr name="ylFolloweViewFollowText" format="string|integer" />
+        <attr name="ylFolloweViewFollowedTextColor" format="color|integer" />
+        <attr name="ylFolloweViewFollowedText" format="string|integer" />
+
+        <attr name="ylFolloweViewFollowBackGround" format="color|reference" />
+        <attr name="ylFolloweViewFollowedBackGround" format="color|reference" />
+        <attr name="ylFolloweViewFollowMask" format="color|reference" />
+        <attr name="ylFolloweViewFollowedMask" format="color|reference" />
+    </declare-styleable>
+</resources>

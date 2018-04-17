@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.yhpl.sample.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <app.yhpl.widgets.YLFollowView
+        android:id="@+id/followView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        app:ylFolloweViewFollowBackGround="@drawable/selector_ffffff_00cccc"
+        app:ylFolloweViewFollowMask="@drawable/shape_rectangle_ffffff_border_00cccc_corner_2"
+        app:ylFolloweViewFollowText="关注"
+        app:ylFolloweViewFollowTextColor="@color/selector_ffffff_00cccc"
+        app:ylFolloweViewFollowedBackGround="@drawable/shape_rectangle_a7a7a7_corner_2"
+        app:ylFolloweViewFollowedMask="@drawable/shape_rectangle_a7a7a7_corner_2"
+        app:ylFolloweViewFollowedText="已关注"
+        app:ylFolloweViewFollowedTextColor="#ffcccccc">
+
+        <app.yhpl.widgets.YLLoadingTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="18dp" />
+    </app.yhpl.widgets.YLFollowView>
+
+</FrameLayout>
