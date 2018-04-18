@@ -18,7 +18,7 @@ YLFollowView
    compile 'com.github.pgq10240817:YLFollowView:1.0.2'
    ```
 
-### 使用示例
+## 使用示例
 
 ```
  <app.yhpl.widgets.YLFollowView
@@ -42,5 +42,8 @@ YLFollowView
             android:textSize="18dp" />
     </app.yhpl.widgets.YLFollowView>
 ```
-
+- ylFolloweViewFollowMask & ylFolloweViewFollowedMask 背景遮罩
+- ylFolloweViewFollowBackGround & ylFolloweViewFollowedBackGround  按钮背景
+- ylFolloweViewFollowText & ylFolloweViewFollowedText 按钮文本
+- ylFolloweViewFollowTextColor & ylFolloweViewFollowedTextColor 按钮文本颜色
 
